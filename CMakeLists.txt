@@ -195,9 +195,9 @@ endif()
 # Example binaries
 #============================================================================
 
-#add_executable(example test/example.c)
-#target_link_libraries(example zlib)
-#add_test(example example)
+add_executable(example_zlib test/example.c)
+target_link_libraries(example_zlib zlib)
+add_test(example_zlib example)
 
 add_executable(minigzip test/minigzip.c)
 target_link_libraries(minigzip zlib)
