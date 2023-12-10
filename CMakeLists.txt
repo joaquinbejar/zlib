@@ -1,7 +1,8 @@
-cmake_minimum_required(VERSION 2.4.4...3.15.0)
+cmake_minimum_required(VERSION 3.22)
 set(CMAKE_ALLOW_LOOSE_LOOP_CONSTRUCTS ON)
 
-project(zlib C)
+cmake_policy(SET CMP0048 NEW)
+project(zlib VERSION 1.3.0.1 LANGUAGES C)
 
 set(VERSION "1.3.0.1")
 
